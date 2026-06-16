@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-3">
         <form action="" method="post">
             <div class="form-group">
                 <label for="edtcategoria">Categoria</label>

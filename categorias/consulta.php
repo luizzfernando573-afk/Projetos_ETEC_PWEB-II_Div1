@@ -18,7 +18,24 @@ $prp->execute();
 
 <body>
     <div class="container mt-3">
-
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Situação</th>
+                    <th scope="col">Operações</th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php while($dscategoria = $prp->fetch(PDO::FETCH_ASSOC)) {?>
+                <tr>
+                    <td><?php echo $dscategoria['catnome']; ?></td>
+                    <td><?php echo $dscategoria['catativo']?'ATIVO':'INATIVO'; ?></td>
+                    <td>@mdo</td>
+                </tr>
+            <?php }?>
+            </tbody>
+        </table>
     </div>
 </body>
 
